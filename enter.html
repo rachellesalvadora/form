@@ -1,0 +1,95 @@
+<html>
+<head>
+
+  <link href="css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/datepicker.css" rel="stylesheet"/>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>  
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+  <script type="text/javascript">
+  $('.datepicker').datepicker();
+  </script>
+</head>
+<body>
+
+  <nav class="navbar navbar-default" role="navigation">
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="enter.html">Enter Domain</a>
+        </li>
+        <li>
+          <a href="view.html">View Domain</a>
+        </li>
+        <li>
+          <a href="setting.html">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</nav>
+
+<div class="container cols-xs-6"> <!--container-->
+  <div class="row">
+    <div class="row-form col-xs-6"> <!--row1-->
+      <div class="container enter-domain">
+        <form class="form">
+          <h1>Enter Domain name</h1>
+
+          <div>
+            <label for="client">Client:</label>
+            <input name="client" id="client" type="text"></input>
+
+          </div>
+          <div>
+
+            <label for="web-adress">Web adress:</label>
+            <input for="web-adress" id="web-adress" type="text"></input>
+
+          </div>
+          <div>
+
+            <label for="expiry-date">Expiry date:</label>
+            <input type="text" id="datepicker">
+
+          </div>
+          <div>
+
+            <label for="status">Status:</label>
+            <div class="radio">
+              <input type="radio"  name="group1" value="active">Active</div>
+
+              <div class="radio"><input type="radio"  vaue="inactive"  name="group1" checked>Inactive</div>
+              <div><input type="radio"  name="group1" value="unpaid">Unpaid</div>
+
+            </div>
+            <div class="row-form">
+
+              <label for="notes">Notes:</label>
+              <textarea cols="60px" rows="6"></textarea>
+
+            </div>
+            <div class="submit">
+
+              <input type="submit" class="submit" value="Submit" id="submit-button"></input>
+
+            </div>
+          </form>
+        </div>
+
+        <div class="row-form cols-xs-6"> Validation</div>
+      </div>
+
+    </body>
+    </html>
